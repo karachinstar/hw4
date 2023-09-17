@@ -1,95 +1,5 @@
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Scanner;
 
-//class HashMap{
-//    class Entity{
-//        int key;
-//        int value;
-//    }
-//    class Basket{
-//        Node head;
-//        class Node{
-//            Entity entity;
-//            Node next;
-//        }
-//
-//        public Integer find(int key){
-//            Node node = head;
-//            while(node != null){
-//                if(node.entity.key == key){
-//                    return node.entity.value;
-//                }
-//                node = node.next;
-//            }
-//            return null;
-//        }
-//
-//        public boolean insert(Entity entity){
-//            Node node = new Node();
-//            node.entity = entity;
-//
-//            if(head == null){
-//                head = node;
-//                return true;
-//            }else {
-//                Node cur = head;
-//                while (cur != null){
-//                    if(cur.entity.key == entity.key){
-//                        return false;
-//                    }
-//                    if(cur.next == null){
-//                        cur.next = node;
-//                        return true;
-//                    }
-//                    cur = cur.next;
-//                }
-//                return false;
-//            }
-//        }
-//    }
-//
-//    public static int INIT_SIZE = 16;
-//    Basket[] baskets;
-//
-//    public HashMap(){
-//        this(INIT_SIZE);
-//    }
-//    public HashMap(int size){
-//        baskets = new Basket[size];
-//    }
-//
-//    public int getIndex(int key){
-//        //key.HashCode()
-//        return key % baskets.length;
-//    }
-//
-//    public Integer find(int key){
-//        int index = getIndex(key);
-//        Basket basket = baskets[index];
-//        if(basket != null){
-//            return basket.find(key);
-//        }
-//        return null;
-//    }
-//
-//    public boolean insert(int key, int value){
-//        Entity entity = new Entity();
-//        entity.key = key;
-//        entity.value = value;
-//
-//        int index = getIndex(key);
-//        Basket basket = baskets[index];
-//
-//        if(basket == null){
-//            basket = new Basket();
-//            baskets[index] = basket;
-//        }
-//
-//        return basket.insert(entity);
-//
-//    }
-//}
+import java.util.Scanner;
 
 class BinaryTree{
     Node root;
@@ -152,24 +62,6 @@ class BinaryTree{
         node.color = Color.RED;
     }
 
-
-//    public boolean find(int value){
-//        return find(root, value);
-//    }
-
-//    public boolean find(Node node, int value){
-//        if(node == null){
-//            return false;
-//        }
-//        if(node.value == value){
-//            return true;
-//        }
-//        if(node.value < value){
-//            return find(node.right, value);
-//        }else{
-//            return find(node.left, value);
-//        }
-//    }
 
     public boolean insert(int value){
         if (root == null) {
@@ -268,14 +160,6 @@ class BinaryTree{
 }
 public class Tree {
     public static void main(String[] args) {
-//        HashMap map = new HashMap();
-//
-//        map.insert(1, 2);
-//        map.insert(17, 4);
-//        map.insert(5, 6);
-//
-//        System.out.println(map.find(1));
-//        System.out.println(map.find(17));
         String  g;
         Scanner sc = new Scanner(System.in);
         BinaryTree tree = new BinaryTree();
